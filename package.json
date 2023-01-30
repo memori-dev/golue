@@ -1,0 +1,9 @@
+{
+  "name": "golue",
+  "version": "1.0.0",
+  "description": "Glues Golang",
+  "main": "golue.js",
+  "scripts": {},
+  "author": "",
+  "license": "ISC"
+}
