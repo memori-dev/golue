@@ -26,10 +26,12 @@ type endpointFetch = (...args: any) => Promise<[Response?, Error?]>
 
 export class Group {
     // The payload object must be exactly formatted
-    static buildRequestInitJSON = function <T>(payload: T): RequestInit {
-        return {
-            headers: {"Content-Type": "application/json"},
-            body: JSON.stringify(payload),
+    static buildRequestInitJSON = function <T>(): (payload: T) => RequestInit {
+        return function(payload: T): RequestInit {
+            return {
+                headers: {"Content-Type": "application/json"},
+                body: JSON.stringify(payload),
+            }
         }
     }
 

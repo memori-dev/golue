@@ -1,15 +1,17 @@
 {
   "compilerOptions": {
-    "target": "ES5",
+    "target": "ES2016",
+    "module": "ES2016",
     "strict": true,
     "strictNullChecks": true,
+    "noImplicitAny": true,
+    "noEmitOnError": true,
     "watch": true,
     "sourceMap": true,
     "outDir": "build",
     "lib": [
       "dom",
-      "es2021.intl",
-      "es2021.promise"
+      "ES2016"
     ]
   }
 }
